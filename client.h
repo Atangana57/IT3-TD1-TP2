@@ -57,7 +57,13 @@ class Client
         /** Access panier
          * \return The current value of panier
          */
-        
+        //!< Method
+        //!< add product in cart
+        void shop(string titre)
+        {Produit pr;
+        pr.Settitre(titre);
+        panier.push_back(pr);}
+
 
     protected:
 
