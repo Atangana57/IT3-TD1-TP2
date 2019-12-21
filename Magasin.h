@@ -64,6 +64,29 @@ class Magasin
             cout<<"/n";
             }
         }
+         //!< Display client by  first and last name
+        void display_client(string prenom,string nom)
+        {
+            for(unsigned int i=0;i<clients.size();i++)
+            {
+            if(clients[i].Getnom()==nom && clients[i].Getprenom()==prenom)
+                {
+            clients[i].Display();
+                }
+            }
+        }
+
+        //!< Display client by id
+        void display_client(int id)
+        {
+            for(unsigned int i=0;i<clients.size();i++)
+            {
+            if(clients[i].Getid()==id)
+                {
+            clients[i].Display();
+                }
+            }
+        }
       
     protected:
 
