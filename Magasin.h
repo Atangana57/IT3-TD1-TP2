@@ -114,6 +114,19 @@ class Magasin
             }
 
         }
+        //!< update product quantity to shopping cart for client by his id
+        void add_product_to_shopping_cart(string titre_produit,unsigned int new_quantity,int id_client)
+        {
+
+        for(unsigned int i=0;i<clients.size();i++)
+            {
+            if(clients[i].Getid()==id_client)
+                {
+            clients[i].update_product_quantity_in_cart(titre_produit,new_quantity);
+                }
+            }
+
+        }
       
     protected:
 
