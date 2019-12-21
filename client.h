@@ -57,13 +57,7 @@ class Client
         /** Access panier
          * \return The current value of panier
          */
-        vector<Produit> Getpanier() { return panier; }
-        //!< Method
-        //!< erase cart
-        void erase_cart()
-        {vector<Produit> pr; panier =pr;}
-
-
+        
 
     protected:
 
