@@ -29,13 +29,7 @@ class Magasin
          * \return The current value of produits
          */
         vector<Produit> Getproduits() { return produits; }
-        /** Set produits
-         * \param val New value to set
-         */
-         void Setproduits(vector<Produit> val) { produits = val; }
-        /** Access clients
-         * \return The current value of clients
-         */
+        
       
     protected:
 
