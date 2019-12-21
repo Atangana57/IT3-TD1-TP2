@@ -54,6 +54,16 @@ class Magasin
         cli.Setprenom(prenom);
         clients.push_back(cli);
         }
+         //!< Display clients
+        void display_clients()
+        {
+            for(unsigned int i=0;i<clients.size();i++)
+            {
+            cout<<i+1<<"             ";
+            clients[i].Display();
+            cout<<"/n";
+            }
+        }
       
     protected:
 
