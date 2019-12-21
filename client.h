@@ -59,6 +59,21 @@ class Client
          */
         //!< Method
         //!< add product in cart
+        
+        /** Access panier
+         * \return The current value of panier
+         */
+        vector<Produit> Getpanier() { return panier; }
+        /** Set panier
+         * \param val New value to set
+         */
+        void Setpanier(vector<Produit> val) { panier = val; }
+
+
+         //!< Method
+        //!< Display this client
+        void Display()
+        {cout<<prenom<<" "<<nom;}
 
         void shop(string titre)
         {Produit pr;
