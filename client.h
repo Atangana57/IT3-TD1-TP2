@@ -65,12 +65,39 @@ class Client
         pr.Settitre(titre);
         panier.push_back(pr);}
 
-        
+
         //!< Method
         //!< erase cart
         void erase_cart()
         {vector<Produit> pr; panier =pr;}
- //!< Method
+
+         //!< Method
+        //!< delete product in cart by titre
+        void delete_product_in_cart(string titre)
+        {unsigned int index=0;
+
+        for(unsigned int i=0;i<panier.size();i++)
+            {
+            if(panier[i].Gettitre()==titre)
+                {
+                index=i;
+                }
+            }
+
+       for(unsigned int y=index;y<panier.size();y++)
+       {
+       panier[y]=panier[y+1];
+       }
+
+       for(unsigned int z=0;z<panier.size();z++)
+            {
+            panier[z]=panier[z+1];
+            }
+
+        }
+
+
+        //!< Method
         //!< update product quantity in cart by titre
         void update_product_quantity_in_cart(string titre,unsigned int new_quantity)
         {
