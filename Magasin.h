@@ -45,6 +45,15 @@ class Magasin
          * \return The current value of commandes
          */
 
+        vector<Commande> Getcommandes() { return commandes; }
+        /** Set commandes
+         * \param val New value to set
+         */
+        void Setcommandes(vector<Commande> val) { commandes = val; }
+
+        //!< Method
+        //!< add client
+
 
         void add_client(string prenom,string nom)
         {
