@@ -59,10 +59,18 @@ class Client
          */
         //!< Method
         //!< add product in cart
+
         void shop(string titre)
         {Produit pr;
         pr.Settitre(titre);
         panier.push_back(pr);}
+
+        
+        //!< Method
+        //!< erase cart
+        void erase_cart()
+        {vector<Produit> pr; panier =pr;}
+
 
 
     protected:
