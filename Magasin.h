@@ -29,10 +29,31 @@ class Magasin
          * \return The current value of produits
          */
         vector<Produit> Getproduits() { return produits; }
+        /** Set produits
+         * \param val New value to set
+         */
         void Setproduits(vector<Produit> val) { produits = val; }
         /** Access clients
          * \return The current value of clients
          */
+          vector<Client> Getclients() { return clients; }
+        /** Set clients
+         * \param val New value to set
+         */
+        void Setclients(vector<Client> val) { clients = val; }
+        /** Access commandes
+         * \return The current value of commandes
+         */
+
+
+        void add_client(string prenom,string nom)
+        {
+        Client cli;
+        cli.Setid(clients.size()+1);
+        cli.Setnom(nom);
+        cli.Setprenom(prenom);
+        clients.push_back(cli);
+        }
       
     protected:
 
