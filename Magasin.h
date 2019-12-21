@@ -87,6 +87,33 @@ class Magasin
                 }
             }
         }
+        //!< Add product to shopping cart for client by his name
+        void add_product_to_shopping_cart(string titre_produit,string prenom_client,string nom_client)
+        {
+
+        for(unsigned int i=0;i<clients.size();i++)
+            {
+            if(clients[i].Getnom()==nom_client && clients[i].Getprenom()==prenom_client)
+                {
+            clients[i].shop(titre_produit);
+                }
+            }
+
+        }
+
+         //!< add product to shopping cart for client by his id
+        void add_product_to_shopping_cart(string titre_produit,int id_client)
+        {
+
+        for(unsigned int i=0;i<clients.size();i++)
+            {
+            if(clients[i].Getid()==id_client)
+                {
+            clients[i].shop(titre_produit);
+                }
+            }
+
+        }
       
     protected:
 
