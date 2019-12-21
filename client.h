@@ -58,11 +58,7 @@ class Client
          * \return The current value of panier
          */
         vector<Produit> Getpanier() { return panier; }
-        /** Set panier
-         * \param val New value to set
-         */
-        void Setpanier(vector<Produit> val) { panier = val; }
-
+        
 
 
     protected:
