@@ -70,7 +70,20 @@ class Client
         //!< erase cart
         void erase_cart()
         {vector<Produit> pr; panier =pr;}
+ //!< Method
+        //!< update product quantity in cart by titre
+        void update_product_quantity_in_cart(string titre,unsigned int new_quantity)
+        {
 
+        for(unsigned int i=0;i<panier.size();i++)
+            {
+            if(panier[i].Gettitre()==titre)
+                {
+                panier[i].Setquantite(new_quantity);
+                }
+            }
+
+        }
 
 
     protected:
