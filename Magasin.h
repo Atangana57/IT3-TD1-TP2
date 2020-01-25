@@ -168,6 +168,23 @@ class Magasin
                 }
             }
         }
+
+          //!< Method
+        //!< List all commands for specific client by his id
+
+        void List_all_client_command(int client_id)
+        {
+
+                    for(unsigned int j=0;j<commandes.size();j++)
+                        {
+                            if(commandes[j].Getclient().Getid()==client_id)
+                            {
+                             commandes[j].Display();
+                            }
+                        }
+
+        }
+
       
     protected:
 
