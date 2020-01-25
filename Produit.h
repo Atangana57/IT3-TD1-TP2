@@ -64,7 +64,9 @@ class Produit
         //!< Method
         //!< Display this product
 
-       
+        void display()
+        { cout<<" titre : "<<titre<<" description : "<<description<<"prix unitaire: "<<prix_unitaire<<"quantite: "<<quantite;}
+
     protected:
 
     private:
