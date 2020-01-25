@@ -13,7 +13,7 @@ class Commande
 {
     public:
         /** Default constructor */
-        Commande(Client cli,vector<Produit> produits,unsigned int status)
+        Commande(Client cli,vector<Produit> produits,string status)
         {
         client=cli;
         produits=produits;
@@ -39,22 +39,39 @@ class Commande
         /** Access produits
          * \return The current value of produits
          */
-        std::vector<Produit*> Getproduits() { return produits; }
+        vector<Produit> Getproduits() { return produits; }
         /** Set produits
          * \param val New value to set
          */
-        void Setproduits(std::vector<Produit*> val) { produits = val; }
+        void Setproduits(vector<Produit> val) { produits = val; }
         /** Access status
          * \return The current value of status
          */
-        
+        string Getstatus() { return status; }
+        /** Set status
+         * \param val New value to set
+         */
+        void Setstatus(string val) { status = val; }
 
-    protected:
+        //!< Method
+        //!< Display this command
 
-    private:
+        void Display()
+        {
+        cout<<" Client : "<<client.Getprenom()<<" "<<client.Getnom()<<" /n "<<" produit :";
+          for(unsigned int i=0;i<produits.size();i++)
+         {
+         cout<<"["<<i+1<<"]-"<<produits[i].Gettitre()<<"/n";
+         }
+        cout<<"status : "<<status<<"/n";
+        }
+
+        protected:
+
+        private:
         Client client; //!< Member variable "client"
-        std::vector<Produit*> produits; //!< Member variable "produits"
-        unsigned int status; //!< Member variable "status"
+        vector<Produit> produits; //!< Member variable "produits"
+        string status; //!< Member variable "status"
 };
 
 #endif // COMMANDE_H
