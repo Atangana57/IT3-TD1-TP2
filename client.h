@@ -57,12 +57,6 @@ class Client
         /** Access panier
          * \return The current value of panier
          */
-        //!< Method
-        //!< add product in cart
-        
-        /** Access panier
-         * \return The current value of panier
-         */
         vector<Produit> Getpanier() { return panier; }
         /** Set panier
          * \param val New value to set
@@ -75,18 +69,20 @@ class Client
         void Display()
         {cout<<prenom<<" "<<nom;}
 
+        //!< Method
+        //!< add product in cart
         void shop(string titre)
         {Produit pr;
         pr.Settitre(titre);
         panier.push_back(pr);}
-
 
         //!< Method
         //!< erase cart
         void erase_cart()
         {vector<Produit> pr; panier =pr;}
 
-         //!< Method
+
+        //!< Method
         //!< delete product in cart by titre
         void delete_product_in_cart(string titre)
         {unsigned int index=0;
@@ -112,6 +108,7 @@ class Client
         }
 
 
+
         //!< Method
         //!< update product quantity in cart by titre
         void update_product_quantity_in_cart(string titre,unsigned int new_quantity)
@@ -126,6 +123,10 @@ class Client
             }
 
         }
+
+
+
+
 
 
     protected:
