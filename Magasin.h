@@ -155,8 +155,19 @@ class Magasin
         cmd.Setstatus(status);
         }
 
-        //!< Method
+       //!< Method
         //!< List all commands
+
+        void List_all_command()
+        {
+          for(unsigned int i=0;i<commandes.size();i++)
+            {
+                {
+            cout<<"---("<<i+1<<")---";
+            commandes[i].Display();
+                }
+            }
+        }
       
     protected:
 
