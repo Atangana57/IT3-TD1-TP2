@@ -136,6 +136,16 @@ class Magasin
             }
 
         }
+
+        //!< Method
+        //!< validate command
+
+        void validate_command(Client cli,string status)
+        {Commande cmd;
+        cmd.Setclient(cli);
+        cmd.Setproduits(cli.Getpanier());
+        cmd.Setstatus(status);
+        }
       
     protected:
 
