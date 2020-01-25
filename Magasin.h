@@ -146,6 +146,17 @@ class Magasin
         cmd.Setproduits(cli.Getpanier());
         cmd.Setstatus(status);
         }
+
+          //!< Method
+        //!< Update command state
+
+        void update_command_state(Commande cmd,string status)
+        {
+        cmd.Setstatus(status);
+        }
+
+        //!< Method
+        //!< List all commands
       
     protected:
 
