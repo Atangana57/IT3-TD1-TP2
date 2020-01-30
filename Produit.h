@@ -60,6 +60,8 @@ class Produit
          * \param val New value to set
          */
         void Setquantite(unsigned int val) { quantite = val; }
+        
+Operator overload
 
         ostream& operator <<(ostream& ostr)
         {
