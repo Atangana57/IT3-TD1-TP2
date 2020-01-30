@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1576897952 source:/home/joel/Desktop/boutique/Client.cpp
+	"Client.h"
+
+1576904484 /home/joel/Desktop/boutique/Client.h
+	<string>
+	<stdlib.h>
+	<vector>
+	<iostream>
+	"Produit.h"
+
+1576902178 /home/joel/Desktop/boutique/Produit.h
+	<string>
+	<stdlib.h>
+	<vector>
+	<iostream>
+
+1576899307 source:/home/joel/Desktop/boutique/Commande.cpp
+
+1576902620 source:/home/joel/Desktop/boutique/main.cpp
+	<iostream>
+	"Magasin.h"
+
+1576899379 source:/home/joel/Desktop/boutique/Produit.cpp
+	"Produit.h"
+
+1576904921 /home/joel/Desktop/boutique/Magasin.h
+	<string>
+	<stdlib.h>
+	<vector>
+	<iostream>
+	"Produit.h"
+	"Commande.h"
+	"Client.h"
+
+1576901741 /home/joel/Desktop/boutique/Commande.h
+	<string>
+	<stdlib.h>
+	<vector>
+	<iostream>
+	"Produit.h"
+	"Client.h"
+

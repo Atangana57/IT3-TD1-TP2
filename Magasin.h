@@ -13,7 +13,7 @@ class Magasin
 {
     public:
         /** Default constructor */
-         Magasin(vector<Produit> prod,vector<Client> cli,vector<Commande> cmd)
+        Magasin(vector<Produit> prod,vector<Client> cli,vector<Commande> cmd)
         {
         produits=prod;
         clients=cli;
@@ -36,7 +36,7 @@ class Magasin
         /** Access clients
          * \return The current value of clients
          */
-          vector<Client> Getclients() { return clients; }
+        vector<Client> Getclients() { return clients; }
         /** Set clients
          * \param val New value to set
          */
@@ -44,7 +44,6 @@ class Magasin
         /** Access commandes
          * \return The current value of commandes
          */
-
         vector<Commande> Getcommandes() { return commandes; }
         /** Set commandes
          * \param val New value to set
@@ -54,7 +53,6 @@ class Magasin
         //!< Method
         //!< add client
 
-
         void add_client(string prenom,string nom)
         {
         Client cli;
@@ -63,7 +61,8 @@ class Magasin
         cli.Setprenom(prenom);
         clients.push_back(cli);
         }
-         //!< Display clients
+
+          //!< Display clients
         void display_clients()
         {
             for(unsigned int i=0;i<clients.size();i++)
@@ -73,6 +72,7 @@ class Magasin
             cout<<"/n";
             }
         }
+
          //!< Display client by  first and last name
         void display_client(string prenom,string nom)
         {
@@ -96,6 +96,7 @@ class Magasin
                 }
             }
         }
+
         //!< Add product to shopping cart for client by his name
         void add_product_to_shopping_cart(string titre_produit,string prenom_client,string nom_client)
         {
@@ -123,6 +124,7 @@ class Magasin
             }
 
         }
+
         //!< update product quantity to shopping cart for client by his id
         void add_product_to_shopping_cart(string titre_produit,unsigned int new_quantity,int id_client)
         {
@@ -134,6 +136,7 @@ class Magasin
             clients[i].update_product_quantity_in_cart(titre_produit,new_quantity);
                 }
             }
+
 
         }
 
@@ -147,7 +150,8 @@ class Magasin
         cmd.Setstatus(status);
         }
 
-          //!< Method
+
+        //!< Method
         //!< Update command state
 
         void update_command_state(Commande cmd,string status)
@@ -155,7 +159,7 @@ class Magasin
         cmd.Setstatus(status);
         }
 
-       //!< Method
+        //!< Method
         //!< List all commands
 
         void List_all_command()
@@ -169,7 +173,7 @@ class Magasin
             }
         }
 
-          //!< Method
+        //!< Method
         //!< List all commands for specific client by his id
 
         void List_all_client_command(int client_id)
@@ -185,7 +189,8 @@ class Magasin
 
         }
 
-      
+
+
     protected:
 
     private:

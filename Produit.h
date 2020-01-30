@@ -61,6 +61,11 @@ class Produit
          */
         void Setquantite(unsigned int val) { quantite = val; }
 
+        ostream& operator <<(ostream& ostr)
+        {
+        return ostr<<" titre : "<<titre<<" description : "<<description<<"prix unitaire: "<<prix_unitaire<<"quantite: "<<quantite;
+        }
+
         //!< Method
         //!< Display this product
 
