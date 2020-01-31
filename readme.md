@@ -8,7 +8,7 @@ Notre application nous permet  globalement de  gérer un ou plusieurs magasins. 
 
 -gérer sa clientèle
 
--gérer ses commandes
+- gérer ses commandes
 
 - gérer basiquement le crud (ajout,supression,edition) pour les utilisateurs (potentiels clients)
 
