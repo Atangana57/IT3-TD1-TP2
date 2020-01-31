@@ -5,8 +5,11 @@ Le projet a été mené par Atangana Atangana Thomas Olivier et Anass el ouahabi
 Notre application nous permet  globalement de  gérer un ou plusieurs magasins. A l'évidence, pour chaque magasin nous pouvons :
 
 -gérer son stock
+
 -gérer sa clientèle
+
 -gérer ses commandes
+
 - gérer basiquement le crud (ajout,supression,edition) pour les utilisateurs (potentiels clients)
 
 Conformément à l'énoncé, toutes les classes et leurs contenus on été créées et
