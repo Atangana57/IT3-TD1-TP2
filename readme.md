@@ -1,12 +1,12 @@
-BIENVENUE DANS VOTRE APPLICATION DE GESTION DE MAGASIN EASY STORE
+BIENVENUE DANS VOTRE APPLICATION DE GESTION DE MAGASIN EASYSTORE
 
-Le projet a été mené par Atangana Atangana Thomas Olivier et Anass el ouahabi.
+Le projet a été mené par Atangana Atangana Thomas Olivier et Anass El Ouahabi.
 
 Notre application nous permet  globalement de  gérer un ou plusieurs magasins. A l'évidence, pour chaque magasin nous pouvons :
 
--gérer son stock
+- gérer son stock
 
--gérer sa clientèle
+- gérer sa clientèle
 
 - gérer ses commandes
 
