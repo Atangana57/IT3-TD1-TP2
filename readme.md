@@ -15,11 +15,11 @@ Notre application nous permet  globalement de  gérer un ou plusieurs magasins. 
 Conformément à l'énoncé, toutes les classes et leurs contenus on été créées et
 se trouvent dans le repertoire "/header".
 
-Ceci dit, les reponses aux questions 1 à 8 correspondent respectivement aux différentes classes crées (Magasins,produit,client,commande) tandis que les reponses aux questions subsidiaires ou de completion sont  intégrées dans leurs classes respectives.
+Ceci dit, les reponses aux questions 1 à 8 correspondent respectivement aux différentes classes créées (Magasins,produit,client,commande) tandis que les réponses aux questions subsidiaires ou de completion sont  intégrées dans leurs classes respectives.
 
-Par ailleurs, l'annonce des méthodes(procedures) implémentées dans le déroulé du  code et répondant aux questions y afférentes est faite en englais sous forme de commentaire.
+Par ailleurs, l'annonce des méthodes(procédures) implémentées dans le déroulé du  code et répondant aux questions y afférentes est faite en englais sous forme de commentaire.
 
-En guise d'illustration, nous notons par exemple qu' au sujet de la question 7 nous avons:
+En guise d'illustration, nous notons par exemple qu'au sujet de la question 7 nous avons:
 
 7.c) Ajouter une méthode permettant d'afficher toutes les commandes passées.
 
