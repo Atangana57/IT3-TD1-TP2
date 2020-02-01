@@ -61,7 +61,7 @@ class Produit
          */
         void Setquantite(unsigned int val) { quantite = val; }
         
-Operator overload
+         //Operator overload
 
         ostream& operator <<(ostream& ostr)
         {
